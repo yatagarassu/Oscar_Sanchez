@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System.Windows.Forms;
+using System.Data.SqlClient;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace CRUD
 {
@@ -15,6 +9,29 @@ namespace CRUD
         public CRUD()
         {
             InitializeComponent();
+            grid();
+        }
+
+        private void grid() //Funcion para abrir mi base de datos
+        {
+
+            string cadcon = "workstation id=ParcialOscar.mssql.somee.com;packet size=4096;user id=laxeous_SQLLogin_1;pwd=57cl9aahy6;data source=ParcialOscar.mssql.somee.com;persist security info=False;initial catalog=ParcialOscar";
+            SqlConnection conexion = new SqlConnection(cadcon);
+            conexion.Open();
+            //Configurar la consulta
+            string consulta = "SELECT * FROM [Alumnos]";
+            SqlDataAdapter da = new SqlDataAdapter(consulta, conexion);
+            DataTable t = new DataTable();
+            da.Fill(t);
+            //Mostrar los datos en el grid
+            dataGridView1.DataSource = t;
+            // dataGridView1.DataBind();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
         }
     }
 }
+

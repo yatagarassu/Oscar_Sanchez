@@ -8,7 +8,8 @@ namespace CRUD
 {
     class CadConexion
     {
-        public string cadcon = "id de estación de trabajo = ParcialOscar.mssql.somee.com; tamaño del paquete = 4096; id de usuario = laxeous_SQLLogin_1; pwd = 57cl9aahy6; fuente de datos = ParcialOscar.mssql.somee.com; información de seguridad persistente = False; catálogo inicial = ParcialOscar";
+        public string cadcon = "workstation id=ParcialOscar.mssql.somee.com;packet size=4096;user id=laxeous_SQLLogin_1;pwd=57cl9aahy6;data source=ParcialOscar.mssql.somee.com;persist security info=False;initial catalog=ParcialOscar";
+        
         //abre la conexion
 
     }
