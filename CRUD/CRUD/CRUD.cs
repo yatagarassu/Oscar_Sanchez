@@ -28,10 +28,7 @@ namespace CRUD
             // dataGridView1.DataBind();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-           
-        }
+        
     }
 }
 
