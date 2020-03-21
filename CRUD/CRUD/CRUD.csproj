@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadConexion.cs" />
     <Compile Include="CRUD.cs">
       <SubType>Form</SubType>
     </Compile>
