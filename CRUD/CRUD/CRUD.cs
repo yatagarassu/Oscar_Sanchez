@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CRUD
 {
-    public partial class Form1 : Form
+    public partial class CRUD : Form
     {
-        public Form1()
+        public CRUD()
         {
             InitializeComponent();
         }
